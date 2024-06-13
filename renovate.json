@@ -29,8 +29,7 @@
     },
     {
       "matchManagers": ["ansible-galaxy"],
-      "groupName": "ansible galaxy",
-      "versioning": "semver"
+      "groupName": "ansible galaxy"
     },
     {
       "matchManagers": ["github-actions"],
