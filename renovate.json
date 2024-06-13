@@ -18,7 +18,7 @@
     {
       "matchUpdateTypes": ["patch"],
       "enabled": false
-    }
+    },
     {
       "matchManagers": ["ansible-galaxy"],
       "groupName": "ansible galaxy"
