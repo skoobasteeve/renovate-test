@@ -1,0 +1,17 @@
+---
+collections:
+  # the following collections are already packaged with the pip Ansible install...
+  # ...but the linter gets confused if they aren't explicitly called out here
+  # We're skipping version numbers here and using whatever is installed with pip
+  - name: amazon.aws
+  - name: community.aws
+  - name: community.general
+  - name: ansible.posix
+roles:
+  # - src: geerlingguy.nodejs
+  #   version: 6.1.1
+  - src: datadog.datadog
+    version: 4.19.0
+  - src: https://github.com/ycharts/ansible-role-nodejs.git
+    version: master
+    name: geerlingguy.nodejs
