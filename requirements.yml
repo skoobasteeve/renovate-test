@@ -10,7 +10,7 @@ collections:
 roles:
   # - src: geerlingguy.nodejs
   #   version: 6.1.1
-  - src: datadog.datadog
+  - src: DataDog.datadog
     version: 4.19.0
   - src: https://github.com/ycharts/ansible-role-nodejs.git
     version: master
