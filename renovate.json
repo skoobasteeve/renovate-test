@@ -5,25 +5,8 @@
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["major"],
-      "enabled": true,
-      "minimumReleaseAge": "60"
-    },
-    {
-      "matchUpdateTypes": ["minor"],
-      "enabled": true,
-      "minimumReleaseAge": "30",
-      "schedule": ["before 4am on the first day of the month"]
-    },
-    {
-      "matchUpdateTypes": ["patch"],
-      "enabled": false
-    },
-    {
       "matchManagers": ["ansible-galaxy"],
       "groupName": "ansible galaxy"
     }
-  ],
-  "dependencyDashboard": true,
-  "labels": ["dependencies"]
+  ]
 }
