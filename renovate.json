@@ -18,42 +18,12 @@
     {
       "matchUpdateTypes": ["patch"],
       "enabled": false
-    },
-    {
-      "matchManagers": ["terraform"],
-      "groupName": "terraform modules"
-    },
-    {
-      "matchManagers": ["pip_requirements"],
-      "groupName": "pip requirements"
-    },
+    }
     {
       "matchManagers": ["ansible-galaxy"],
       "groupName": "ansible galaxy"
-    },
-    {
-      "matchManagers": ["github-actions"],
-      "groupName": "github actions"
-    },
-    {
-      "matchManagers": ["npm"],
-      "groupName": "npm"
     }
   ],
   "dependencyDashboard": true,
-  "labels": ["dependencies"],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": [
-        "(^|/)tasks/[^/]+\\.ya?ml$",
-        "(^|/)defaults/[^/]+\\.ya?ml$",
-        "(^|/)vars/[^/]+\\.ya?ml$"
-      ],
-      "matchStrings": [
-        "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_version:\\s\"(?<currentValue>.*)\""
-      ],
-      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
-    }
-  ]
+  "labels": ["dependencies"]
 }
