@@ -13,7 +13,7 @@ roles:
   - src: DataDog.datadog
     version: 4.19.0
   - src: geerlingguy.docker
-    version: 6.2.0
+    version: 7.3.0
   - src: https://github.com/ycharts/ansible-role-nodejs.git
     version: master
     name: geerlingguy.nodejs
